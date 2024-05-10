@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    font-family: "Arial", serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#B42937;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Ajusta el tamaño del logo según tu preferencia */
+    margin-right: 10px; /* Agrega un margen a la derecha para separar el logo del texto */
+}
+
+.logo a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #e91e63;
+}
+
+ .cuadro1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #fff;
+    background-size: 90% 110%; /* Ajustar tamaño para cubrir completamente */
+    background-attachment: fixed;
+    text-align: center;
+    border: 4px solid #8C1A1A;
+}
+
+.cuadro1 h2 {
+    margin-top: 80px; /* Ajuste: margen superior de 20px */
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+    -webkit-text-stroke: 3px #8C1A1A; /* Contorno rojo */
+    text-shadow: 2px #8C1A1A; /* Contorno rojo */
+}
+
+.cuadro6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url(img/10.jpeg) no-repeat center;
+    background-size: cover; /* Ajustar tamaño para cubrir completamente */
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro8 {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen exterior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+.cuadro2:hover, .cuadro3:hover, .cuadro4:hover, .cuadro5:hover,  .cuadro8:hover{
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.cuadro7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: url(img/11.jpeg) no-repeat center;
+    background-size: cover; /* Ajustar tamaño para cubrir completamente */
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #fff;
+    background-size: 90% 110%; /* Ajustar tamaño para cubrir completamente */
+    background-attachment: fixed;
+    text-align: center;
+    border: 4px solid #808080;
+}
+
+.price h2 {
+    margin-top: -90px; /* Ajuste: margen superior de 20px */
+}
+
+.price p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-align: justify; /* Alineación justificada */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.price p:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.contact {
+    padding: 50px 0;
+    height: 40vh;
+    background: #fff;
+    border: 4px solid #8C1A1A;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #8C1A1A;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+    .head {
+        height: auto; /* Altura automática para adaptarse al contenido */
+        padding: 10px; /* Agregar espacio interno */
+        flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+      }
+    
+      .navbar {
+        margin-top: 10px; /* Agregar margen superior */
+        margin-right: 0; /* Eliminar margen derecho */
+      }
+    
+      .logo {
+        margin-left: 10px; /* Ajustar margen izquierdo */
+      }
+    
+      .navbar a {
+        padding: 10px 15px; /* Ajustar el relleno */
+        font-size: 16px; /* Ajustar el tamaño de la fuente */
+      }
+
+    .header {
+        height: auto;
+        padding-top: 100px; /* Ajustar espaciado superior */
+        padding-bottom: 100px; /* Ajustar espaciado inferior */
+    }
+
+    .title {
+        font-size: 40px; /* Ajustar el tamaño de fuente para pantallas más pequeñas */
+        margin: 5px 0 0;
+        -webkit-text-stroke: 2px #8C1A1A; /* Ajustar el contorno */
+        text-shadow: 1px #8C1A1A; /* Ajustar el contorno */
+    }
+
+    p {
+        font-size: 16px; /* Ajustar tamaño del texto */
+        padding: 0 20px; /* Ajustar padding horizontal */
+    }
+
+    .btn {
+        padding: 10px 30px; /* Ajustar tamaño del botón */
+    }
+
+
+    .cuadro2, .cuadro3, .cuadro4, .cuadro5, .cuadro8{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .price h2 {
+        margin-top: -70px;
+    }
+
+    .price p {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 30px 0;
+        height: auto;
+    }
+
+    
+
+    .f-enlaces {
+        margin: 0;
+    }
+
+    .f-enlaces a {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+

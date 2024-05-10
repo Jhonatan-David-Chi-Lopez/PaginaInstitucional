@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    display: grid;
+    font-family: "Arial", serif;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.content {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Alinear elementos verticalmente */
+}
+
+.box img {
+    flex: 0 0 auto; /* Eliminar el tamaño fijo de la imagen */
+    max-width: 50%; /* Establecer un ancho máximo para la imagen */
+    height: auto; /* Para mantener la proporción de la imagen */
+    margin-left: 20px; /* Ajuste para separar la imagen del texto */
+}
+
+.box div {
+    flex: 1; /* El texto ocupa todo el espacio restante */
+}
+
+
+
+
+.cuadro1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #fff;
+    background-size: 10% 110%; /* Ajustar tamaño para cubrir completamente */
+    background-attachment: fixed;
+    text-align: center;
+    width: 200%;
+    border: 4px solid #8C1A1A;
+}
+
+.cuadro1 h2 {
+    margin-top: 100px; /* Ajuste: margen superior de 20px */
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color:#fff;
+    -webkit-text-stroke: 4px #8C1A1A; /* Contorno rojo */
+    text-shadow: 2px #8C1A1A;
+}
+
+
+.cuadro2, .cuadro4, .cuadro6{
+    grid-column: 1;
+}
+
+.cuadro3, .cuadro5, .cuadro7 {
+    grid-column: 2;
+}
+
+.about {
+    background: url(img/17.jpeg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 100px;
+    grid-column: 1 / 3; /* Ocupa ambas columnas */
+}
+
+.contact-container {
+    padding: 60px 0;
+    background: #8C1A1A;
+    height: 100vh; /* Cambiar la altura según lo necesites */
+}
+
+.logo img {
+    width: 40px; /* Ajusta el tamaño del logo según tu preferencia */
+    margin-right: 10px; /* Agrega un margen a la derecha para separar el logo del texto */
+}
+
+.contact {
+    padding: 50px;
+    background: #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 200%; /* Ajusta el ancho del elemento .contact */
+    max-width: none; /* Establece un ancho máximo */
+    margin: 0 ; /* Centra horizontalmente */
+    border: 4px solid #8C1A1A;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.f-enlaces {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px;
+}
+
+.f-enlaces a {
+    color: #8C1A1A;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background:#B42937;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #e91e63;
+}
+
+@media (max-width: 991px) {
+    body {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+
+    .box img {
+        max-width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+        margin-left: 0; /* Elimina el margen izquierdo de la imagen */
+        margin-bottom: 10px; /* Espacio entre imagen y texto */
+    }
+
+    .box div {
+        margin-left: 0; /* Alinear texto a la izquierda */
+    }
+
+    .title {
+        font-size: 40px; /* Reducir el tamaño del título */
+        margin-bottom: 20px; /* Espacio inferior reducido */
+    }
+
+    .cuadro1 h2 {
+        margin-top: 50px; /* Ajuste del margen superior */
+    }
+
+    .about {
+        padding: 50px; /* Reduce el relleno del contenedor */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+
+    .contact-container {
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    .contact {
+        padding: 30px; /* Reduce el relleno del contenedor */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        border-radius: 0; /* Elimina el borde redondeado */
+    }
+
+    .f-enlaces {
+        margin: 0; /* Elimina el margen */
+    }
+
+    .head {
+        height: auto; /* Altura automática para adaptarse al contenido */
+        padding: 10px; /* Agregar espacio interno */
+        flex-direction: column; /* Cambiar la dirección de la flexbox a columna */
+        align-items: flex-start; /* Alinear los elementos al inicio */
+      }
+    
+      .navbar {
+        margin-top: 10px; /* Agregar margen superior */
+        margin-right: 0; /* Eliminar margen derecho */
+      }
+    
+      .logo {
+        margin-left: 10px; /* Ajustar margen izquierdo */
+      }
+    
+      .navbar a {
+        padding: 10px 15px; /* Ajustar el relleno */
+        font-size: 16px; /* Ajustar el tamaño de la fuente */
+      }
+
+      .footer-section {
+        flex-direction: column; /* Cambia a una disposición de columna */
+        align-items: center; /* Alinea los elementos al centro */
+        text-align: center; /* Alinea el texto al centro */
+        padding: 30px 0; /* Reduce el relleno vertical */
+    }
+
+    .f-enlaces {
+        margin: 20px 0; /* Ajuste del margen superior e inferior */
+    }
+
+    .f-enlaces a {
+        margin: 10px 0; /* Ajuste del margen superior e inferior */
+    }
+
+    body {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+
+    /* Asegura que todos los elementos ocupen todo el ancho */
+    .cuadro1,
+    .cuadro2,
+    .cuadro3,
+    .cuadro4,
+    .cuadro5,
+    .cuadro6,
+    .cuadro7
+    {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Agrega un margen inferior */
+    }
+
+    /* Asegura que los cuadros 2 y 4 ocupen la columna completa */
+    .cuadro2,
+    .cuadro4,
+    .cuadro6 {
+        grid-column: span 2; /* Ocupa dos columnas completas */
+    }
+
+    /* Asegura que los cuadros 3 y 5 ocupen la columna completa */
+    .cuadro3,
+    .cuadro5,
+    .cuadro7 {
+        grid-column: span 2; /* Ocupa dos columnas completas */
+    }
+
+    .content {
+        padding: 10px; /* Reduce el relleno del contenedor principal */
+    }
+
+    .box {
+        flex-direction: column-reverse; /* Reduce el margen inferior de .box */
+    }
+
+}
